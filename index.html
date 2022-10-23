@@ -1,51 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Notifications page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  Notifications 3
+  <main class="container">
 
-  Mark all as read
+    <section id="notification-header">
 
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
+      <article>
+        <h1 class="big-heading">Notifications <span>3</span></h1>
+        <p>Mark all as unread</p>
+      </article>
 
-  Angela Gray followed you
-  5m ago
+    </section>
 
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
+    <section id="notification-body">
 
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
+      <!-- MESSAGE-1 -->
+      <article class="message-box">
 
-  Kimberly Smith commented on your picture
-  1 week ago
+        <div class="message-box-item">
 
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
+          <div class="banner">
+            <img src="../images/avatar-mark-webber.webp" alt="avatar-mark-webber">
+          </div>
 
-  Anna Kim left the group Chess Club
-  2 weeks ago
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+          <div class="message-content">
+            <p>
+              <span class="username">Mark Webber</span>
+              <span class="notification">reacted to your recent post <span class="message">My first tournament today!
+              </span>
+             </span>
+            </p>
+            <div class="circle"></div>
+          </div>
+
+        </div>
+
+        <div class="time">1m ago</div>
+
+      </article>
+
+      <!-- MESSGAE-2 -->
+      <article class="message-box">
+
+        <div class="message-box-item">
+
+          <div class="banner">
+            <img src="../images/avatar-angela-gray.webp" alt="avatar-angela-gray">
+          </div>
+
+          <div class="message-content">
+            <p>
+              <span class="username">Angela Gray</span>
+              <span class="notification"> followed you</span>
+            </p>  
+            <div class="circle"></div>
+          </div>
+
+        </div>
+
+        <div class="time">5m ago</div>
+
+      </article>
+
+      <!-- MESSGAE-3 -->
+      <article class="message-box">
+
+        <div class="message-box-item">
+
+          <div class="banner">
+            <img src="../images/avatar-jacob-thompson.webp" alt="avatar-jacob-thompson">
+          </div>
+
+          <div class="message-content">
+
+            <p>
+              <span class="username">Jacob Thompson</span>
+              <span class="notification"> has joined your group <span class="chess clr-blue fw-800">Chess Club</span>
+              </span>
+            </p>
+            <div class="circle"></div>
+          </div>
+
+        </div>
+
+        <div class="time">1 day ago</div>
+
+      </article>
+
+      <!-- MESSGAE-4 -->
+      <article class="message-box">
+
+        <div class="message-box-item">
+
+          <div class="banner">
+            <img src="../images/avatar-rizky-hasanuddin.webp" alt="avatar-jacob-thompson">
+          </div>
+
+          <div class="message-content">
+
+            <p>
+              <span class="username">Rizky Hasanuddin</span>
+              <span class="notification"> sent you a private message</span>
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="time">5 days ago</div>
+
+        <div class="private-message">
+          <p class="private-message">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now
+            and I'm already having lots of fun and improving my game.</p>
+        </div>
+
+      </article>
+
+      <!-- MESSGAE-5 -->
+      <article class="message-box">
+
+        <div class="message-box-item">
+
+          <div class="banner">
+            <img src="../images/avatar-kimberly-smith.webp" alt="avatar-kimberly-smith">
+          </div>
+
+          <div class="message-content">
+
+            <p>
+              <span class="username">Kimberly Smith</span>
+              <span class="notification"> commented on your picture</span>
+            </p>
+
+            <div class="picture">
+              <img src="images/image-chess.webp" alt="image-chess">
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="time">1 week ago</div>
+
+      </article>
+
+      <!-- MESSGAE 6 -->
+      <article class="message-box message-6">
+
+        <div class="message-box-item message-box-6">
+
+          <div class="banner">
+            <img src="images/avatar-nathan-peterson.webp" alt="avatar-nathan-peterson">
+          </div>
+
+          <div class="message-content">
+
+            <p>
+              <span class="username nathan-peterson">Nathan Peterson</span>
+              <span class="notification">reacted to your recent post 5 end-game strategies to increase your win rate</span>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="time">2 weeks ago</div>
+
+      </article>
+
+      <!-- MESSGAE-7 -->
+      <article class="message-box">
+
+        <div class="message-box-item">
+
+          <div class="banner">
+            <img src="../images/avatar-anna-kim.webp" alt="avatar-kimberly-smith">
+          </div>
+
+          <div class="message-content">
+
+            <p>
+              <span class="username">Anna Kim</span>
+              <span class="notification">left the group Chess Club</span>
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="time">2 weeks ago</div>
+
+      </article>
+
+    </section>
+
+  </main>
+
+
+  <script src="javascript/notification-page.js"></script>
 </body>
+
 </html>
